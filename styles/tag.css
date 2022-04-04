@@ -1,0 +1,20 @@
+.tag {
+   width: fit-content;
+   background-color: #E4F8FF;
+   display: flex;
+   align-items: center;
+   padding: 4px 8px;
+   font-weight: 800;
+   font-size: 0.8rem;
+   border-radius: 4px;
+   color: rgb(var(--primary));
+   box-shadow: var(--box-shadow);
+}
+
+.tag > span {
+   margin-left: 8px;
+}
+
+.tag svg {
+   font-size: 1.15rem;
+}

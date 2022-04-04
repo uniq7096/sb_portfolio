@@ -1,0 +1,135 @@
+.project__container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 12px;
+}
+
+.project__project {
+   position: relative;
+   margin: auto;
+   overflow: hidden;
+   height: 175px;
+   width: 100%;
+}
+
+.project__overlay {
+   background: #f3f3f3e1;
+   position: absolute;
+   margin: auto;
+   width: 0px;
+   height: 0px;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   opacity: 0;
+   -webkit-transition: 0.4s ease;
+   transition: 0.4s ease;
+   z-index: 1;
+}
+
+.project__img {
+   object-fit: cover;
+   box-shadow: var(--box-shadow);
+   border-radius: 0.25rem;
+}
+
+.project__project:hover .project__overlay {
+   opacity: 1;
+   width: 100%;
+   height: 100%;
+   border-radius: 0.25rem;
+}
+
+.project__details {
+   text-align: left;
+   position: absolute;
+   margin: auto;
+   height: 100%;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   opacity: 0;
+   -webkit-transform: scale(0);
+   transform: scale(0);
+   -webkit-transition: transform 0.5s ease, opacity 0.7s ease;
+   transition: transform 0.5s ease, opacity 0.7s ease;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 3;
+}
+
+.project__project:hover .project__details {
+   opacity: 1;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: transform 0.5s ease, opacity 1.3s ease;
+   transition: transform 0.5s ease, opacity 1.3s ease;
+   padding: 0 16px;
+}
+
+.project__project h3 {
+   border-bottom: 2px solid #fff;
+}
+
+.project__project h3,
+.project__description {
+   color: var(--font-primary);
+   font-size: 1.05rem;
+}
+
+.project__description {
+   font-size: 0.8rem;
+   padding-top: 8px;
+   position: relative;
+   z-index: 2;
+}
+
+.project__social {
+   padding-top: 8px;
+}
+
+.project__social svg {
+   font-size: 24px;
+   margin: 0 4px;
+   transition: 0.3s ease;
+   color: rgb(var(--primary));
+}
+
+@media screen and (max-width: 575px) {
+   .project__container {
+      grid-template-columns: 1fr;
+   }
+
+   .project__project {
+      height: 250px;
+   }
+
+   .project__project h3 {
+      font-size: 1.25rem;
+   }
+
+   #project {
+      padding-bottom: 64px;
+   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+   .project__project {
+      height: 200px;
+   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+   .project__container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+   .project__project {
+      height: 225px;
+   }
+}

@@ -1,0 +1,12 @@
+.about__interests {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   position: relative;
+   z-index: 3;
+}
+
+.about__details {
+   padding-bottom: 8px;
+   position: relative;
+   z-index: 3;
+}
