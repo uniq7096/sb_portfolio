@@ -22,6 +22,8 @@ import {
   SiSocketdotio,
   SiGraphql,
   SiJamstack,
+  SiDjango,
+  SiPython,
 } from "react-icons/si";
 
 export const skills = [
@@ -42,10 +44,12 @@ export const skills = [
   { id: 14, title: "GraphQL", icon: <SiGraphql /> },
   { id: 15, title: "WebSocket", icon: <SiSocketdotio /> },
   { id: 16, title: "Node.js/Express", icon: <FaNode /> },
-  { id: 17, title: "MongoDB", icon: <SiMongodb /> },
-  { id: 18, title: "MySQL", icon: <SiMysql /> },
-  { id: 19, title: "Solidity", icon: <FaEthereum /> },
-  { id: 20, title: "Web3.js", icon: <SiWeb3Dotjs /> },
-  { id: 21, title: "Unit Testing", icon: <MdComputer /> },
-  { id: 22, title: "Webpack", icon: <SiWebpack /> },
+  { id: 17, title: "Django", icon: <SiDjango /> },
+  { id: 18, title: "Python", icon: <SiPython /> },
+  { id: 19, title: "MongoDB", icon: <SiMongodb /> },
+  { id: 20, title: "MySQL", icon: <SiMysql /> },
+  { id: 21, title: "Solidity", icon: <FaEthereum /> },
+  { id: 22, title: "Web3.js", icon: <SiWeb3Dotjs /> },
+  { id: 23, title: "Unit Testing", icon: <MdComputer /> },
+  { id: 24, title: "Webpack", icon: <SiWebpack /> },
 ];
